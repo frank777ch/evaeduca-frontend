@@ -1,3 +1,4 @@
+// src/components/auth/Register.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -16,7 +17,6 @@ const Register = () => {
   const [instituciones, setInstituciones] = useState([]);
 
   useEffect(() => {
-    // Obtener las instituciones del backend
     const fetchInstituciones = async () => {
       try {
         const response = await axios.get('http://localhost:3000/api/institutions');
